@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body
+	{
+		overflow: hidden;
+		background-image: url(./images/AAH.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#admin
+	{
+		width: 400px;
+		height:400px;
+		border: 4px groove navy;
+		position: relative;
+		left: 900px;
+		top: 150px;
+	}
+	
+	button
+	{
+		width: 300px;
+		height: 35px;
+		color:azure;
+		font-weight: bold;
+		background-color: rgb(3, 3, 73);
+		position: relative;
+		left: 50px;
+		top: 50px;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+	
+</style>
+</head>
+<body>
+<div id="admin">
+	<a href="fetchstaff"><button>View and Approve Staff</button></a><br><br>
+	<a href="fetchDoctor"><button>View and Approve Doctor</button></a><br><br>
+	<a href="fetchallpatient"><button>Fetch All Patient Details</button></a><br><br>
+
+	<a href="logout"><button>LogOut</button></a>
+</div>
+	
+</body>
+</html>

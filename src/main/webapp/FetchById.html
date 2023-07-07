@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fetch By ID</title>
+<link rel="stylesheet" href="Home.css">
+<style>
+	*
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+	body
+	{
+		background-image: linear-gradient(skyblue,white);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#fch
+	{
+		width: 100%;
+		height: 50px;
+		background-color: lightpink;
+	}
+
+	#iii
+	{
+		position: relative;
+		left:820px;
+		top: 0px;
+		font-size: 20px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+
+	input
+	{
+		width: 200px;
+		height: 25px;
+		border: 2px solid black;
+		position: relative;
+		left: 20px;
+	}
+	
+	button
+	{
+		width: 100px;
+		position: relative;
+		left: 40px;
+		font-size: 20px;
+	}
+
+	#bb
+	{
+		position: relative;
+		left: 20px;
+	}
+</style>
+</head>
+<body>
+	<nav id="navigation">
+		<img id="navi" src="./images/navbarlogo.jpg" alt=""><i></i><b style="position: relative;top: 28px; left: 120px;">Connected Healthcare</b>
+		<a  id="hh"href="./Home.html"><img src="./images/home.jpg" alt="" width="30px" height="20px">Home</a>
+		<a  id="aa"href="./About.html"><img src="./images/about us.jpg" alt="" width="30px" height="20px">About</a>
+		<a  id="cc"href="./HelpLine.html"><img src="./images/contact.jpg" alt="" width="30px" height="20px">HelpLine</a>
+	
+	<div id="iii">
+<form action="AppointmentForm.jsp">
+	<table>
+	<tr>
+		<td><label for="Pid">Enter ID:</label></td>
+		<td><input type="text" name="id" id=Pid></td>
+		<td><button type="submit">Book</button></td>
+		<td><a href="BookAppointment.jsp" id="bb"><button>Back</button></a></td>
+	</tr>
+	</table>
+	
+</form>
+</div>
+</nav>
+</body>
+</html>

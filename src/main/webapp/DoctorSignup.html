@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    body
+    {
+        overflow: hidden;
+        background-image: linear-gradient(skyblue,white);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #DS
+    {
+        width:1000px;
+        height: 500px;
+        border: 5px groove skyblue;
+        position: relative;
+        left: 300px;
+        top: 100px;
+    }
+    
+    #Dsign
+    {
+        width: 600px;
+        height: 505px;
+        background-image: url(./images/Dsign.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        left:-2px;
+        top:-3px;
+    }
+    h2
+    {
+        position: relative;
+        left: 600px;
+        top: 50px;
+    }
+    #form
+    {
+        width: 435px;
+        height: 500px;
+        position: relative;
+        left: 600px;
+        top: -500px;
+    }
+    form
+    {
+        position: relative;
+        left: 30px;
+        top: -250px;
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    input
+    {
+        width: 200px;
+        height: 24px;
+        border: 2px solid black;
+
+    }
+
+    input[type="radio"]
+    {
+        position: relative;
+        top: 0px;
+        left:50px;
+    }
+
+    #ge
+    {
+        position: relative;
+        left: -110px;
+        
+    }
+
+    button
+    {
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 25%;
+    }
+    
+</style>
+</head>
+<body>
+    
+    <h2>Please Enter Doctor Details for Registration</h2>
+    <div id="DS">
+    <div id="Dsign"></div>
+    <div id="form">
+    <form action="doctorsignup" method="post">
+        <table>
+            <tr>
+                <th><label for="dn">Name</label></th>
+                <th><input type="text" id="dn" name="dname"></th>
+            </tr><br>
+            <tr>
+                <th><label for="dm">Mobile</label></th>
+                <th><input type="number" id="dm" name="dmobile"></th>
+            </tr><br>
+            <tr>
+                <th><label for="de">Email</label></th>
+                <th><input type="email" id="de" name="demail"></th>
+            </tr><br>
+            <tr>
+                <th><label for="pwd">Password</label></th>
+                <th><input type="password" pattern="{0-9}[10]" id="pwd" name="dpassword"></th>
+            </tr><br>
+            <tr>
+                <th><label for="dateofbirth">DOB</label></th>
+                <th><input type="date" id="dataofbrith" name="dob"></th>
+            </tr>
+            <tr>
+                <th><label for="qq">Qualification</label></th>
+                <th><input type="text" id="qq" name="Qualification"></th>
+            </tr><br>
+            <tr>
+                <th><label for="ss">Specailization</label></th>
+                <th><input type="text" id="ss" name="specailization"></th>
+            </tr><br>
+            <tr>
+                <th><Label for="ggg">Gender</Label></th>
+                <td id="ge" ><input type="radio" id="ggg" name="gender1" value="female">Female</td>
+            </tr>
+            <tr >
+                <th></th>
+                <td id="ge" style="position: relative;top: -15px;"><input type="radio" id="ggg" name="gender1" value="male">Male</td>
+            </tr>
+            
+            <tr>
+                <th><button type="reset">Cancel</button></th>
+                <th><button>Register</button></th>
+            </tr>
+            
+        </table>
+    </form>
+    </div>
+</div>
+</body>
+</html>

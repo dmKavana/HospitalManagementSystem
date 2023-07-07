@@ -1,0 +1,236 @@
+body
+{
+    overflow-x: hidden;
+    height:400px;
+    background-color: white;
+}
+#navigation
+{
+    width: 100%;
+    height: 50px;
+    background-color: white(153, 254, 254);
+}
+#navi
+{
+    width:60px;
+    height: 40px;
+    margin-left: 50px;
+    position: absolute;
+    top: 12px;
+}
+#hh
+{
+    margin-left: 200px;
+    position: absolute;
+    top:18px ;
+    text-align: right;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(20, 20, 86);
+
+}
+#aa
+{
+    margin-left: 350px;
+    position: absolute;
+    top:18px ;
+    text-align: right;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(20, 20, 86);
+
+}
+#cc
+{
+    margin-left: 500px;
+    position: absolute;
+    top:18px ;
+    text-align: right;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(20, 20, 86);
+}
+#ll
+{
+    margin-left: 650px;
+    position: absolute;
+    top:18px ;
+    text-align: right;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(20, 20, 86);
+}
+
+#about
+{
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/Ab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -30px;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: relative;
+    top: 220px;
+}
+
+#sec2
+{
+    width: 100%;
+    height: 400px;
+    /* border: 3px solid black; */
+    position: relative;
+    background-image: linear-gradient(white 60%,rgb(221, 237, 244) );
+}
+
+h4
+{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-shadow: 10%;
+}
+#vision
+{
+    width: 35%;
+    height: 220px;
+    box-shadow: 10px 10px 10px 10px gainsboro;
+    border-radius: 3%;
+    border-left: 5px solid rgb(7, 177, 245);
+    position: relative;
+    top: 40px;
+    left: 220px;
+}
+
+h3
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+p
+{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-left: 20px;
+    word-spacing: 5px;
+}
+
+#mission
+{
+    width: 35%;
+    height: 220px;
+    box-shadow: 10px 10px 10px 10px gainsboro;
+    border-radius: 3%;
+    border-left: 5px solid rgb(7, 177, 245);
+    position: relative;
+    top: -200px;
+    left: 780px;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#values
+{
+    text-align: center;
+}
+
+#section1
+{
+    width: 350px;
+    height: 300px;
+    /* border: 2px solid black; */
+    margin-left: 280px;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    border-radius: 5%;
+    position: relative;
+    left: -100px;
+    top: 50px;
+}
+
+#log1,#log2,#log3
+{
+    position: relative;
+    left: 150px;
+    top: 5px;
+}
+
+#CF,#CI,#CS
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+#des1,#des2,#des3
+{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+}
+
+#section2
+{
+    width: 350px;
+    height: 300px;
+    /* border: 2px solid black; */
+    margin-left: 280px;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    border-radius: 5%;
+    position: relative;
+    top: -250px;
+    left: 290px;
+}
+
+#section3
+{
+    width: 350px;
+    height: 300px;
+    /* border: 2px solid black; */
+    margin-left: 280px;
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    border-radius: 5%;
+    position: relative;
+    top: -550px;
+    left: 690px;
+}
+
+footer
+{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    top: -450px;
+}
+
+.ff
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    margin-right: 50px;
+}

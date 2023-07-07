@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+    }
+    h2
+    {
+        position: relative;
+        left: 550px;
+        top: 160px;
+    }
+
+    body
+    {
+        overflow: hidden;
+        background-image: url(./images/StaffSignup.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #form
+    {
+        width: 400px;
+        height: 450px;
+        /* border: 5px groove goldenrod; */
+        position: relative;
+        left: 560px;
+        top: 180px;
+    }
+    form
+    {
+        position: relative;
+        left: 30px;
+        top: 30px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    input
+    {
+        width: 200px;
+        height: 24px;
+        border: 2px solid black;
+
+    }
+
+    input[type="radio"]
+    {
+        position: relative;
+        top: 0px;
+        left:50px;
+    }
+
+    #ge
+    {
+        position: relative;
+        left: -110px;
+    }
+
+    button
+    {
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 25%;
+    }
+    
+</style>
+</head>
+<body>
+    <h2>Please Enter Staff Details for Registrartion</h2>
+<div id="form">
+    <form action="staffsignup" method="post" >
+        <table>
+            <tr>
+                <th><Label for="nn">Name</Label></th>
+                <th><input type="text" id="nn" name="name"></th>
+            </tr>
+            <tr>
+                <th><Label for="ee">Email</Label></th>
+                <th><input type="email" id="ee" name="email"></th>
+            </tr>
+            <tr>
+                <th><Label for="pw">Password</Label></th>
+                <th><input type="password" pattern="{0-9}[10]" id="pw" name="password"></th>
+            </tr>
+            <tr>
+                <th><Label for="mm">Mobile</Label></th>
+                <th><input type="tel" id="mm" name="mobile"></th>
+            </tr>
+            <tr>
+                <th><Label for="dd">DOB</Label></th>
+                <th><input type="date" id="dd" name="brith"></th>
+            </tr>
+            <tr >
+                <th><Label for="gg">Gender</Label></th>
+                <td id="ge"><input type="radio" id="gg" name="gender" value="female">Female</td>
+            </tr>
+            <tr >
+                <th></th>
+                <td id="ge" style="position: relative;top: -15px;"><input type="radio" id="gg" name="gender" value="male">Male</td>
+            </tr>
+            <tr>
+                <th><button type="reset">Cancel</button></th>
+                <th><button>Register</button></th>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

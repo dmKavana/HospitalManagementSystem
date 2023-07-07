@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="Home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+	body
+	{
+		overflow-x: hidden;
+	}
+
+	.footerab
+	{
+		width: 83%;
+		height: 350px;
+		border:3px solid skyblue;
+		border-radius: 3.5%;
+		position: relative;
+		top: 280px;
+		left: 150px;
+	}
+
+	#section1
+	{
+		width: 300px;
+		height: 250px;
+		/* border: 2px solid black; */
+		position: relative;
+		left: 30px;
+		top: 25px;
+	}
+
+	#log1,#log2
+	{
+		position: relative;
+		left: 120px;
+		top: 10px;
+	}
+
+	#log3
+	{
+		position: relative;
+		left: 150px;
+		top: 10px;
+	}
+
+	#hed1,#hed2,#hed3
+	{
+		position: relative;
+		text-align: center;
+	}
+
+	#des1,#des2
+	{
+		text-align: center;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	#des3
+	{
+		position: relative;
+		top: -15px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	#section2
+	{
+		width: 300px;
+		height: 250px;
+		/* border: 2px solid black; */
+		position: relative;
+		left: 440px;
+		top: -230px;
+	}
+
+	#section3
+	{
+		width: 350px;
+		height: 250px;
+		/* border: 2px solid black; */
+		position: relative;
+		left: 850px;
+		top: -480px;
+	}
+
+	footer
+	{
+		position: relative;
+		top: -200px;
+	}
+
+	#animation
+	{
+		width: 90%;
+		height: 550px;
+		/* border:3px solid skyblue; */
+		border-radius: 3.5%;
+		position: relative;
+		top: -720px;
+		left: 100px;
+		animation: HMS 20s linear 0.2s 7;
+	}
+
+	@keyframes HMS
+	{
+		20%
+		{
+			background-image: url(./images/Animation.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		40%
+		{
+			background-image: url(./images/Animation1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		70%
+		{
+			background-image: url(./images/Animation2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		100%
+		{
+			background-image: url(./images/Animation3.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+</style>
+</head>
+<body>
+	<nav id="navigation">
+		<img id="navi" src="./images/navbarlogo.jpg" alt=""><i></i><b style="position: relative;top: 28px; left: 120px;">Connected Healthcare</b>
+		<a  id="hh"href="./Home.html"><img src="./images/home.jpg" alt="" width="30px" height="20px">Home</a>
+		<a  id="aa"href="./About.html"><img src="./images/about us.jpg" alt="" width="30px" height="20px">About</a>
+		<a  id="cc"href="./HelpLine.html"><img src="./images/contact.jpg" alt="" width="30px" height="20px">HelpLine</a>
+		<a  id="ll"href="./LogIn.html"><img src="./images/login.jpg" alt="" width="30px" height="20px">LogIn</a>
+	</nav>
+	<div id="home">
+		<div id="online"><b>Online Software for <br>Hospital</b></div>
+		<div id="desc">Hospital Management System (HMS) helps 
+			deliver <br>superior delivery for doctors, clinics and hospitals.</div>
+	</div>
+	<div id="home1">
+		<div id="he">The Leading Hospital Management System in India Manage Appointments,
+			<br> Staff, Doctors and Patient Data with Ease!</div>
+		<div id="Appointments">
+			<img id="fa-calendar-check" src="./images/app.jpg">
+			<b id="app1">Appointments</b>
+			<ul id="app">
+				<li>Enter the Patient Details.</li>
+				<li>Manage patient appointments.</li>
+				<li>According to Doctor Availability Book the Appointment.</li>
+			</ul>
+		</div>
+		<div id="Staff">
+			<img id="dd" src="./images/dct.jpg" alt="">
+			<b id="ss1">Doctor</b>
+			<ul id="st">
+				<li>Doctor can be change the availiabilty,</li>
+				<li>Doctor can view the Upcoming Appointments along with the patient details.</li>
+				<li>Doctor can view the all appointments.</li>
+			</ul>
+		</div>
+		<div id="Doctor">
+			<img id="ss" src="./images/staff.jpg" alt="">
+			<b id="dd1">Staff</b>
+			<ul id="dt">
+				<li>Staff will be add the patient details and Book the Appointments according to patients convience.</li>
+				<li>Staff will be view the patient details.</li>
+				<li>Only staff can be edit the details of patients.</li>
+			</ul>
+		</div>
+	</div>
+	<div id="Safe">
+		<img id="safety" src="./images/ss.jpg" alt="">
+		<b id="sec">Safety </b> <b id="sec11">Security</b>
+		<ul id="sec1">
+			<li>Confidentiality is priority! With the practice management software, data is safe and secure</li>
+			<li>We comply with the international data norms</li>
+		</ul>
+	</div>
+	</div>
+	
+	<div class="footerab">
+		<div id="section1">
+			<div id="log1"><img src="./images/OPD.jpg" alt="" width="60px" height="60px"></div>
+			<div id="hed1"><h2>Manage <br>OPD</h2></div>
+			<div id="des1"><p>Organize your OPD into a paperless experience - from 
+				booking appointments, making payments, recording clinical data, 
+				getting prescription and lab reports.</p></div>
+		</div>
+		<div id="section2">
+			<div id="log2"><img src="./images/lab.jpg" alt="" width="60px" height="60px"></div>
+			<div id="hed2"><h2>Lab Management <br>Software</h2></div>
+			<div id="des2"><p>Provide a connected experience with integrated billing,
+				sample collection, automated lab and electronic test reports.</p></div>
+		</div>
+		<div id="section3">
+			<div id="log3"><img src="./images/PMS.jpg" alt="" width="60px" height="60px"></div>
+			<div id="hed3"><h2>pharmacy Management <br>Software</h2></div>
+			<div id="des3"><p>Purchase stocks, manage inventory and bill medicines. 
+				Doctors can see stocks and prescribe medicines.Our pharmacy 
+				software solution includes a host of features that will make 
+				you more competitive while simplifying your daily routine</p></div>
+		</div>
+	</div>
+
+	<div id="animation">
+
+	</div>
+	<Footer>
+        <a href="https://www.instagram.com/accounts/login/"><img class="ff" src="./images/fb.png" alt=""></a>
+        <a href="https://in.pinterest.com/login/"><img class="ff" src="./images/inst.png" alt=""></a>
+        <a href="https://www.linkedin.com/login"><img class="ff" src="./images/linkedin.png" alt=""></a>
+        <br>
+    </Footer>
+</body>
+</html>

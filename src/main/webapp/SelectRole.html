@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	*
+	{
+		padding: 0;
+		margin: 0;
+	}
+	body
+	{
+		overflow: hidden;
+		height: 800px;
+		background-image: url(./images/SelectRole.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#appp
+	{
+		width: 300px;
+		height: 250px;
+		border: 5px groove burlywood;
+		position: relative;
+		left: 750px;
+		top: 180px;
+	}
+	#form
+	{
+		position: relative;
+		left: 30px;
+		top: 30px;
+	}
+	form
+	{
+		line-height: 30px;
+		font-size: 20px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	button
+	{
+		width: 100px;
+		height: 30px;
+		font-size: 20px;
+		border-radius: 5%;
+		font-weight: bold;
+		font-family:monospace;
+		position: relative;
+		top: 20px;
+	}
+
+	button[type=submit]
+	{
+		position: relative;
+		left: 15px;
+	}
+
+	input[type=radio]
+	{
+		width: 20px;
+		height: 15px;
+		position: relative;
+		left: -10px;
+	}
+
+	#h
+	{
+		position: relative;
+		left: 30px;
+	}
+
+	h1
+	{
+		position: relative;
+		left: 740px;
+		top: 150px;
+	}
+</style>
+</head>
+<body>
+	<h1>Select type of an account</h1>
+<div id="appp">
+<form action="selectrole" method="post" id="form">
+	<input type="radio" name="role" required value="staff">Staff<br>
+	<input type="radio" name="role" value="doctor">Doctor<br>
+	<button type="reset">Cancel</button>	<button type="submit">Submit</button><br><br>
+</form><br><br>
+<a href="LogIn.html" id="h"><button>Home</button></a>
+</div>
+
+</body>
+</html>

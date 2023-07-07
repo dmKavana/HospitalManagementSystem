@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            background-image: url(./images/Appoitment.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h2
+        {
+            position: relative;
+            left: 800px;
+            top: 80px;
+        }
+
+        #appp
+        {
+            width: 380px;
+            height:350px;
+            border: 3px solid black;
+            position: relative;
+            left: 800px;
+            top: 100px;
+        }
+
+        #form
+        {
+            width: 400px;
+            height: 450px;
+            border: 5px groove goldenrod;
+            position: relative;
+            left: 180px;
+            top: 100px;
+        }
+        form
+        {
+            position: relative;
+            left: 30px;
+            top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+    
+        input
+        {
+            width: 200px;
+            height: 24px;
+            border: 2px solid black;
+            position: relative;
+            left: 20px;
+        }
+    
+        button
+        {
+            width: 80px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 25%;
+            position: relative;
+            top: 20px;
+        }
+
+        button[type="reset"]
+        {
+            position: relative;
+            left: 100px;
+        }
+        
+        input[type=file],input[type=date]
+        {
+        	color:black;
+        	font-size: 15px;
+        }
+        
+        #back
+        {
+        	position: relative;
+        	top: 100px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h2>Please fill the appointment details</h2>
+<div id="appp">
+    <form action="addpatient" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><Label for="nn">Name:</Label></td>
+                <td><input type="text" id="nn" name="name"></td>
+            </tr>
+            <tr>
+                <td><Label for="mm">Mobile:</Label></td>
+                <td><input type="tel" id="mm" name="mobile"pattern="{0-9}[10]"></td>
+            </tr>
+            <tr>
+                <td><Label for="dd">DOB:</Label></td>
+                <td><input type="date" id="dd" name="birth"></td>
+            </tr>
+            <tr>
+                <td><Label for="pp">Picture:</Label></td>
+                <td><input type="file" id="pp" name="picture"></td>
+            </tr>
+            <tr>
+                <td><button>Add</button></td>
+                <td><button type="reset">Cancel</button></td>
+            </tr>
+        </table>
+    </form>
+    <a href="StaffHome.html"><button id="back">Back</button></a>
+    
+</div>
+    
+</body>
+</html>

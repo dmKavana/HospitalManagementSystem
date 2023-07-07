@@ -1,0 +1,42 @@
+package Controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import dao.Hospitaldao;
+import dto.Doctor;
+
+@WebServlet("/fetchDoctor")
+public class FetchDoctor extends HttpServlet
+{
+	protected void doGet(HttpServletRequest req,HttpServletResponse resp) throws IOException, ServletException 
+	{
+		if(req.getSession().getAttribute("admin")!=null)
+		{
+			Hospitaldao h=new Hospitaldao();
+			List<Doctor> d=h.fetchAllDoctor();
+			
+			if(d.isEmpty())
+			{
+				resp.getWriter().print("<h1>No staff has signed up yet<h1>");
+				req.getRequestDispatcher("AdminHome.html").include(req, resp);
+			}
+			else
+			{
+				req.setAttribute("list", d);
+				req.getRequestDispatcher("ApproveDoctor.jsp").forward(req, resp);
+			}
+		}
+		else
+		{
+			resp.getWriter().print("<h1>Session Expired</h1>");
+			req.getRequestDispatcher("LogIn.html").include(req, resp);
+		}
+	}
+}

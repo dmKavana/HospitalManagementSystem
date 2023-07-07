@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="Home.css">
+<style>
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	#navigation
+	{
+		background-color: white;
+	}
+	body
+	{
+		overflow: hidden;
+		background-image:url(./images/forgot.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	h3{
+		position: relative;
+		left: 920px;
+		top: 130px;
+	}
+	#form
+	{
+		width: 400px;
+		height: 300px;
+		border: 5px groove black;
+		position: relative;
+		left: 900px;
+		top: 100px;
+	}
+
+	#form1
+	{
+		position: relative;
+		left: 20px;
+		top: 40px;
+		font-size: 25px;
+	}
+
+	input
+	{	
+		width: 220px;
+		height: 25px;
+		position: relative;
+		font-size: bold;
+		margin-bottom: 8px;
+		left: 10px;
+		border: 2px solid black;
+	}
+
+	button
+	{
+		width: 350px;
+		height: 30px;
+		position: relative;
+		top: 20px;
+		left: 30px;
+		font-size: 20px;
+		font-weight: bold;
+		border: 2px solid black;
+	}
+
+	button[type="reset"]
+	{
+		width: 80px;
+		position: relative;
+		left: -10px;
+	}
+
+	button[type="submit"]
+	{
+		width: 80px;
+		position: relative;
+		left: 10px;
+	}
+
+	#fp
+	{
+		color: navy;
+		width: 100px;
+		height: 50px;
+		font-size: 20px;
+		position: relative;
+		top: 90px;
+		left: 30px;
+	}
+
+	#cn
+	{
+		width: 150px;
+		position: relative;
+		top: 70px;
+		left: -10px;
+	}
+	
+	
+</style>
+
+</head>
+
+<body>
+	<nav id="navigation">
+		<img id="navi" src="./images/navbarlogo.jpg" alt=""><i></i><b style="position: relative;top: 28px; left: 120px;">Connected Healthcare</b>
+		<a  id="hh"href="./Home.html"><img src="./images/home.jpg" alt="" width="30px" height="20px">Home</a>
+		<a  id="aa"href="./About.html"><img src="./images/about us.jpg" alt="" width="30px" height="20px">About</a>
+		<a  id="cc"href="./HelpLine.html"><img src="./images/contact.jpg" alt="" width="30px" height="20px">HelpLine</a>
+		<a  id="ll"href="./LogIn.html"><img src="./images/login.jpg" alt="" width="30px" height="20px">LogIn</a>
+	</nav>
+	<h3>Please Enter below details</h3>
+
+<div id="form">
+<form id="form1" action="log" method="post" autocomplete="off">
+
+<table>
+	<tr>
+		<th><label for="ii">ID:</label></th>
+		<th><input type="text" id="ii" name="id"></th>
+	</tr>
+	<tr>
+		<th><label for="pp">Password:</label></th>
+		<th><input type="password" id="pp" name="pwd"></th>
+	</tr>
+	<tr id="btn">
+		<th><button type="reset">Cancel</button></th>
+		<th><a href=""><button type="submit">LogIn</button></a></th>
+	</tr>
+</table>
+
+</form>
+
+
+<a id="fp" href="ForgotPassword.html">Forgot Password</a><br><br>
+<a id="cn" href="SelectRole.html"><button> Click here to create New Account</button></a><br><br>
+
+
+</div>
+</body>
+</html>
